@@ -597,4 +597,12 @@ module user_project_wrapper (user_clock2,
     wbs_sel_i[2],
     wbs_sel_i[1],
     wbs_sel_i[0]}));
+ opamp_cascode opamp (.IN_P(analog_io[11]),
+    .IN_M(analog_io[12]),
+    .VCC(vccd1),
+    .VSS(vssd1),
+    .OUT(analog_io[13]),
+    .VB_A(analog_io[8]),
+    .VB_B(analog_io[9]),
+    .IB(analog_io[10]));
 endmodule

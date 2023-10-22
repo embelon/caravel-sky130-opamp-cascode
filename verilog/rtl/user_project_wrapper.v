@@ -82,6 +82,25 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
+opamp_cascode opamp (
+`ifdef USE_POWER_PINS
+	.VCC(vccd1),	// User area 1 1.8V power
+	.VSS(vssd1),	// User area 1 digital ground
+`endif
+
+    // Analog signals
+    // Inputs
+    .IN_M(analog_io[12]),
+    .IN_P(analog_io[11]),
+    // Output
+    .OUT(analog_io[13]),
+    // Bias current
+    .IB(analog_io[10]),
+    // Bias voltages
+    .VB_A(analog_io[8]),
+    .VB_B(analog_io[9])
+);
+
 user_proj_example mprj (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
