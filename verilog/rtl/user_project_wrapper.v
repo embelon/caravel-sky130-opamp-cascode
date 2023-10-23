@@ -90,15 +90,15 @@ opamp_cascode opamp (
 
     // Analog signals
     // Inputs
-    .IN_M(analog_io[12]),
-    .IN_P(analog_io[11]),
+    .IN_M(analog_io[9]),
+    .IN_P(analog_io[8]),
     // Output
-    .OUT(analog_io[13]),
+    .OUT(analog_io[10]),
     // Bias current
-    .IB(analog_io[10]),
+    .IB(analog_io[7]),
     // Bias voltages
-    .VB_A(analog_io[8]),
-    .VB_B(analog_io[9])
+    .VB_A(analog_io[5]),
+    .VB_B(analog_io[6])
 );
 
 user_proj_example mprj (

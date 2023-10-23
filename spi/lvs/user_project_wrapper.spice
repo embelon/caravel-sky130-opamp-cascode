@@ -196,8 +196,8 @@
 + wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3]
 + wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0]
 + wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
-Xopamp analog_io[11] analog_io[12] vccd1 vssd1 analog_io[13] analog_io[8] analog_io[9]
-+ analog_io[10] opamp_cascode
+Xopamp analog_io[8] analog_io[9] vccd1 vssd1 analog_io[10] analog_io[5] analog_io[6]
++ analog_io[7] opamp_cascode
 Xmprj io_in[0] io_in[32] io_in[33] io_in[34] io_in[35] io_in[36] io_in[37] io_in[1]
 + io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] io_in[7] io_in[30] io_in[31] io_oeb[0]
 + io_oeb[32] io_oeb[33] io_oeb[34] io_oeb[35] io_oeb[36] io_oeb[37] io_oeb[1] io_oeb[2]
