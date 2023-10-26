@@ -66,16 +66,6 @@ XM2_dummy_7 dummy_2 VB_A dummy_2 VCC sky130_fd_pr__pfet_01v8 L=5 W=5 nf=1 m=1
 XM2_dummy_8 dummy_2 VB_A dummy_2 VCC sky130_fd_pr__pfet_01v8 L=5 W=5 nf=1 m=1
 XM2_dummy_9 dummy_2 VB_A dummy_2 VCC sky130_fd_pr__pfet_01v8 L=5 W=5 nf=1 m=1
 XM2_dummy_10 dummy_2 VB_A dummy_2 VCC sky130_fd_pr__pfet_01v8 L=5 W=5 nf=1 m=1
-XM5_dummy_1 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=17
-XM5_dummy_2 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=17
-XM5_dummy_3 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_4 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_5 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_6 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_7 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_8 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_9 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
-XM5_dummy_10 dummy_5 IN_P dummy_5 VCC sky130_fd_pr__pfet_01v8 L=0.18 W=5 nf=1 m=1
 XM4_dummy_1 dummy_4 bias3 dummy_4 VSS sky130_fd_pr__nfet_01v8 L=1 W=1.25 nf=1 m=6
 XM4_dummy_2 dummy_4 bias3 dummy_4 VSS sky130_fd_pr__nfet_01v8 L=1 W=1.25 nf=1 m=6
 XM4_dummy_3 dummy_4 bias3 dummy_4 VSS sky130_fd_pr__nfet_01v8 L=1 W=1.25 nf=1 m=1
