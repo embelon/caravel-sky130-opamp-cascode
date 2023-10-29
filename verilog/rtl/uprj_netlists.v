@@ -22,8 +22,10 @@
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
     `include "gl/user_proj_example.v"
+    `include "gl/analog_io_control.v"
 `else
     `include "user_project_wrapper.v"
     `include "user_proj_example.v"
+    `include "analog_io_control.v"
     `include "opamp_cascode.v"
 `endif

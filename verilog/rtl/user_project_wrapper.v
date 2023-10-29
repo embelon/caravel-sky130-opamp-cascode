@@ -101,6 +101,15 @@ opamp_cascode opamp (
     .VB_B(analog_io[6])
 );
 
+analog_io_control aio_ctrl (
+`ifdef USE_POWER_PINS
+	.vccd1(vccd1),	// User area 1 1.8V power
+	.vssd1(vssd1),	// User area 1 digital ground
+`endif
+    .io_out(io_out[10:5]),
+    .io_oeb(io_oeb[10:5])
+);
+
 user_proj_example mprj (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
