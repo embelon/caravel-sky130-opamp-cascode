@@ -10,28 +10,39 @@
     "CLOCK_NET": "mprj.clk",
     "FP_PDN_MACRO_HOOKS": [
         "mprj vccd1 vssd1 vccd1 vssd1,",
+        "aio_ctrl vccd1 vssd1 vccd1 vssd1,",
         "opamp vccd1 vssd1 VCC VSS"
     ],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/gl/user_proj_example.v",
+        "dir::../../verilog/gl/analog_io_control.v",
         "dir::../../verilog/rtl/opamp_cascode.v"
     ],
     "EXTRA_LEFS": [
         "dir::../../lef/user_proj_example.lef",
+        "dir::../../lef/analog_io_control.lef",
         "dir::../../lef/opamp_cascode.lef"
     ],
     "EXTRA_GDS_FILES": [
         "dir::../../gds/user_proj_example.gds",
+        "dir::../../gds/analog_io_control.gds",
         "dir::../../gds/opamp_cascode.gds"
     ],
-    "EXTRA_LIBS": "dir::../../lib/user_proj_example.lib",
+    "EXTRA_LIBS": [
+        "dir::../../lib/user_proj_example.lib",
+        "dir::../../lib/analog_io_control.lib"
+    ],
     "EXTRA_SPEFS": [
         "user_proj_example", 
         "dir::../../spef/multicorner/user_proj_example.min.spef", 
         "dir::../../spef/multicorner/user_proj_example.nom.spef", 
-        "dir::../../spef/multicorner/user_proj_example.max.spef"
+        "dir::../../spef/multicorner/user_proj_example.max.spef",
+        "analog_io_control",
+        "dir::../../spef/multicorner/analog_io_control.min.spef", 
+        "dir::../../spef/multicorner/analog_io_control.nom.spef", 
+        "dir::../../spef/multicorner/analog_io_control.max.spef"
     ],
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,

@@ -39,6 +39,18 @@ module user_project_wrapper (user_clock2,
  input [3:0] wbs_sel_i;
 
 
+ analog_io_control aio_ctrl (.io_oeb({io_oeb[10],
+    io_oeb[9],
+    io_oeb[8],
+    io_oeb[7],
+    io_oeb[6],
+    io_oeb[5]}),
+    .io_out({io_out[10],
+    io_out[9],
+    io_out[8],
+    io_out[7],
+    io_out[6],
+    io_out[5]}));
  user_proj_example mprj (.wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
     .wbs_ack_o(wbs_ack_o),

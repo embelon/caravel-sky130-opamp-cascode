@@ -1,0 +1,9 @@
+BEGIN: Fri 27 Oct 2023 08:04:54 PM UTC
+Creating /home/zwierzak/projects/caravel_user_project/lvs/user_project_wrapper/lvs_results/2023-10-27-20-04-53/tmp/verilog.cells from the following files...
+	/home/zwierzak/projects/caravel_user_project/verilog/gl/user_proj_example.v
+	/home/zwierzak/projects/caravel_user_project/verilog/gl/user_project_wrapper.v
+[INFO] Changing from /home/zwierzak/projects/caravel_user_project/gds/user_project_wrapper.gds
+	to /home/zwierzak/projects/caravel_user_project/lvs/user_project_wrapper/lvs_results/2023-10-27-20-04-53/tmp/layout.txt
+Hierarchy check for user_project_wrapper passed.
+END: Fri 27 Oct 2023 08:05:01 PM UTC
+Runtime: 0:00:07 (hh:mm:ss)

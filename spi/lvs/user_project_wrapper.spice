@@ -4,6 +4,11 @@
 .subckt opamp_cascode IN_P IN_M VCC VSS OUT VB_A VB_B IB
 .ends
 
+* Black-box entry subcircuit for analog_io_control abstract view
+.subckt analog_io_control io_oeb[0] io_oeb[1] io_oeb[2] io_oeb[3] io_oeb[4] io_oeb[5]
++ io_out[0] io_out[1] io_out[2] io_out[3] io_out[4] io_out[5] vccd1 vssd1
+.ends
+
 * Black-box entry subcircuit for user_proj_example abstract view
 .subckt user_proj_example io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14]
 + io_in[15] io_in[1] io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] io_in[7] io_in[8]
@@ -198,6 +203,8 @@
 + wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 Xopamp analog_io[8] analog_io[9] vccd1 vssd1 analog_io[10] analog_io[5] analog_io[6]
 + analog_io[7] opamp_cascode
+Xaio_ctrl io_oeb[5] io_oeb[6] io_oeb[7] io_oeb[8] io_oeb[9] io_oeb[10] io_out[5] io_out[6]
++ io_out[7] io_out[8] io_out[9] io_out[10] vccd1 vssd1 analog_io_control
 Xmprj io_in[0] io_in[32] io_in[33] io_in[34] io_in[35] io_in[36] io_in[37] io_in[1]
 + io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] io_in[7] io_in[30] io_in[31] io_oeb[0]
 + io_oeb[32] io_oeb[33] io_oeb[34] io_oeb[35] io_oeb[36] io_oeb[37] io_oeb[1] io_oeb[2]
