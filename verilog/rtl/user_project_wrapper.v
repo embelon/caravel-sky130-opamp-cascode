@@ -110,7 +110,6 @@ analog_io_control aio_ctrl (
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
 `endif
-    .io_out(io_out[17:12]),
     .io_oeb(io_oeb[17:12])
 );
 

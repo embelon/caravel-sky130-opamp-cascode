@@ -1,21 +1,13 @@
 // This is the unpowered netlist.
-module analog_io_control (io_oeb,
-    io_out);
+module analog_io_control (io_oeb);
  output [5:0] io_oeb;
- output [5:0] io_out;
 
- wire net4;
- wire net5;
- wire net6;
- wire net7;
- wire net8;
- wire net9;
- wire net10;
- wire net11;
- wire net12;
  wire net1;
  wire net2;
  wire net3;
+ wire net4;
+ wire net5;
+ wire net6;
 
  sky130_fd_sc_hd__decap_3 FILLER_0_0_109 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_0_113 ();
@@ -137,7 +129,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_16_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_16_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_16_139 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_16_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_16_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_16_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_16_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_16_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_16_29 ();
@@ -169,8 +162,7 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_18_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_18_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_18_139 ();
- sky130_fd_sc_hd__decap_4 FILLER_0_18_141 ();
- sky130_fd_sc_hd__fill_1 FILLER_0_18_145 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_18_141 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_18_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_18_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_18_29 ();
@@ -268,7 +260,8 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_23_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_23_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_23_125 ();
- sky130_fd_sc_hd__decap_6 FILLER_0_23_137 ();
+ sky130_fd_sc_hd__decap_8 FILLER_0_23_137 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_23_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_23_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_23_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_23_3 ();
@@ -382,7 +375,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_2_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_2_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_2_139 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_2_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_2_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_2_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_2_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_2_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_2_29 ();
@@ -398,7 +392,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_30_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_30_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_30_139 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_30_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_30_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_30_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_30_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_30_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_30_29 ();
@@ -447,8 +442,7 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_33_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_33_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_33_125 ();
- sky130_fd_sc_hd__decap_8 FILLER_0_33_137 ();
- sky130_fd_sc_hd__fill_1 FILLER_0_33_145 ();
+ sky130_fd_sc_hd__decap_6 FILLER_0_33_137 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_33_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_33_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_33_3 ();
@@ -513,7 +507,8 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_37_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_37_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_37_125 ();
- sky130_fd_sc_hd__decap_6 FILLER_0_37_137 ();
+ sky130_fd_sc_hd__decap_8 FILLER_0_37_137 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_37_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_37_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_37_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_37_3 ();
@@ -643,7 +638,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_44_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_44_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_44_139 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_44_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_44_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_44_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_44_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_44_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_44_29 ();
@@ -692,8 +688,7 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_47_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_47_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_47_125 ();
- sky130_fd_sc_hd__decap_8 FILLER_0_47_137 ();
- sky130_fd_sc_hd__fill_1 FILLER_0_47_145 ();
+ sky130_fd_sc_hd__decap_6 FILLER_0_47_137 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_47_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_47_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_47_3 ();
@@ -741,8 +736,7 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_4_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_4_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_4_139 ();
- sky130_fd_sc_hd__decap_4 FILLER_0_4_141 ();
- sky130_fd_sc_hd__fill_1 FILLER_0_4_145 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_4_141 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_4_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_4_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_4_29 ();
@@ -775,7 +769,8 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_51_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_51_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_51_125 ();
- sky130_fd_sc_hd__decap_6 FILLER_0_51_137 ();
+ sky130_fd_sc_hd__decap_8 FILLER_0_51_137 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_51_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_51_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_51_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_51_3 ();
@@ -889,7 +884,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_58_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_58_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_58_139 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_58_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_58_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_58_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_58_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_58_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_58_29 ();
@@ -970,8 +966,7 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_62_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_62_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_62_139 ();
- sky130_fd_sc_hd__decap_4 FILLER_0_62_141 ();
- sky130_fd_sc_hd__fill_1 FILLER_0_62_145 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_62_141 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_62_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_62_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_62_29 ();
@@ -1020,7 +1015,8 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_65_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_65_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_65_125 ();
- sky130_fd_sc_hd__decap_6 FILLER_0_65_137 ();
+ sky130_fd_sc_hd__decap_8 FILLER_0_65_137 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_65_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_65_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_65_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_65_3 ();
@@ -1151,7 +1147,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_72_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_72_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_72_139 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_72_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_72_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_72_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_72_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_72_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_72_29 ();
@@ -1216,8 +1213,7 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_76_121 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_76_133 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_76_139 ();
- sky130_fd_sc_hd__decap_4 FILLER_0_76_141 ();
- sky130_fd_sc_hd__fill_1 FILLER_0_76_145 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_76_141 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_76_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_76_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_76_29 ();
@@ -1266,7 +1262,8 @@ module analog_io_control (io_oeb,
  sky130_ef_sc_hd__decap_12 FILLER_0_79_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_79_125 ();
  sky130_fd_sc_hd__decap_3 FILLER_0_79_137 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_79_141 ();
+ sky130_fd_sc_hd__decap_4 FILLER_0_79_141 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_79_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_79_15 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_79_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_79_29 ();
@@ -1315,7 +1312,8 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__fill_1 FILLER_0_9_111 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_9_113 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_9_125 ();
- sky130_fd_sc_hd__decap_6 FILLER_0_9_137 ();
+ sky130_fd_sc_hd__decap_8 FILLER_0_9_137 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_9_145 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_9_15 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_9_27 ();
  sky130_ef_sc_hd__decap_12 FILLER_0_9_3 ();
@@ -1692,28 +1690,16 @@ module analog_io_control (io_oeb,
  sky130_fd_sc_hd__tapvpwrvgnd_1 TAP_363 ();
  sky130_fd_sc_hd__tapvpwrvgnd_1 TAP_364 ();
  sky130_fd_sc_hd__conb_1 analog_io_control_1 (.HI(net1));
- sky130_fd_sc_hd__conb_1 analog_io_control_10 (.HI(net10));
- sky130_fd_sc_hd__conb_1 analog_io_control_11 (.HI(net11));
- sky130_fd_sc_hd__conb_1 analog_io_control_12 (.HI(net12));
  sky130_fd_sc_hd__conb_1 analog_io_control_2 (.HI(net2));
  sky130_fd_sc_hd__conb_1 analog_io_control_3 (.HI(net3));
  sky130_fd_sc_hd__conb_1 analog_io_control_4 (.HI(net4));
  sky130_fd_sc_hd__conb_1 analog_io_control_5 (.HI(net5));
  sky130_fd_sc_hd__conb_1 analog_io_control_6 (.HI(net6));
- sky130_fd_sc_hd__conb_1 analog_io_control_7 (.HI(net7));
- sky130_fd_sc_hd__conb_1 analog_io_control_8 (.HI(net8));
- sky130_fd_sc_hd__conb_1 analog_io_control_9 (.HI(net9));
- assign io_oeb[0] = net4;
- assign io_oeb[1] = net5;
- assign io_oeb[2] = net6;
- assign io_oeb[3] = net7;
- assign io_oeb[4] = net8;
- assign io_oeb[5] = net9;
- assign io_out[0] = net10;
- assign io_out[1] = net11;
- assign io_out[2] = net12;
- assign io_out[3] = net1;
- assign io_out[4] = net2;
- assign io_out[5] = net3;
+ assign io_oeb[0] = net1;
+ assign io_oeb[1] = net2;
+ assign io_oeb[2] = net3;
+ assign io_oeb[3] = net4;
+ assign io_oeb[4] = net5;
+ assign io_oeb[5] = net6;
 endmodule
 

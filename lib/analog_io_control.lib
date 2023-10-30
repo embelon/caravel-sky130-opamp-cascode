@@ -32,13 +32,6 @@ library (analog_io_control) {
     bit_from : 5;
     bit_to : 0;
   }
-  type ("io_out") {
-    base_type : array;
-    data_type : bit;
-    bit_width : 6;
-    bit_from : 5;
-    bit_to : 0;
-  }
 
   cell ("analog_io_control") {
     bus("io_oeb") {
@@ -47,15 +40,15 @@ library (analog_io_control) {
       capacitance : 0.0000;
     pin("io_oeb[5]") {
       direction : output;
-      capacitance : 0.0009;
+      capacitance : 0.0008;
     }
     pin("io_oeb[4]") {
       direction : output;
-      capacitance : 0.0009;
+      capacitance : 0.0008;
     }
     pin("io_oeb[3]") {
       direction : output;
-      capacitance : 0.0009;
+      capacitance : 0.0007;
     }
     pin("io_oeb[2]") {
       direction : output;
@@ -63,38 +56,9 @@ library (analog_io_control) {
     }
     pin("io_oeb[1]") {
       direction : output;
-      capacitance : 0.0009;
+      capacitance : 0.0008;
     }
     pin("io_oeb[0]") {
-      direction : output;
-      capacitance : 0.0009;
-    }
-    }
-    bus("io_out") {
-      bus_type : io_out;
-      direction : output;
-      capacitance : 0.0000;
-    pin("io_out[5]") {
-      direction : output;
-      capacitance : 0.0009;
-    }
-    pin("io_out[4]") {
-      direction : output;
-      capacitance : 0.0009;
-    }
-    pin("io_out[3]") {
-      direction : output;
-      capacitance : 0.0009;
-    }
-    pin("io_out[2]") {
-      direction : output;
-      capacitance : 0.0009;
-    }
-    pin("io_out[1]") {
-      direction : output;
-      capacitance : 0.0009;
-    }
-    pin("io_out[0]") {
       direction : output;
       capacitance : 0.0009;
     }

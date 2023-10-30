@@ -35,10 +35,8 @@ module analog_io_control #(
 `endif
 
     // IOs
-    output [BITS-1:0] io_out,
     output [BITS-1:0] io_oeb
 );
-    assign io_out = {(BITS){1'b1}};
     assign io_oeb = {(BITS){1'b1}};
 
 endmodule

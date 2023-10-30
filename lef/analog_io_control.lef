@@ -12,7 +12,7 @@ MACRO analog_io_control
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 76.000 34.040 80.000 34.640 ;
+        RECT 76.000 20.440 80.000 21.040 ;
     END
   END io_oeb[0]
   PIN io_oeb[1]
@@ -20,7 +20,7 @@ MACRO analog_io_control
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 76.000 72.120 80.000 72.720 ;
+        RECT 76.000 59.880 80.000 60.480 ;
     END
   END io_oeb[1]
   PIN io_oeb[2]
@@ -28,7 +28,7 @@ MACRO analog_io_control
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 76.000 110.200 80.000 110.800 ;
+        RECT 76.000 99.320 80.000 99.920 ;
     END
   END io_oeb[2]
   PIN io_oeb[3]
@@ -36,7 +36,7 @@ MACRO analog_io_control
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 76.000 148.280 80.000 148.880 ;
+        RECT 76.000 138.760 80.000 139.360 ;
     END
   END io_oeb[3]
   PIN io_oeb[4]
@@ -44,7 +44,7 @@ MACRO analog_io_control
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 76.000 186.360 80.000 186.960 ;
+        RECT 76.000 178.200 80.000 178.800 ;
     END
   END io_oeb[4]
   PIN io_oeb[5]
@@ -52,57 +52,9 @@ MACRO analog_io_control
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 76.000 224.440 80.000 225.040 ;
+        RECT 76.000 217.640 80.000 218.240 ;
     END
   END io_oeb[5]
-  PIN io_out[0]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 76.000 15.000 80.000 15.600 ;
-    END
-  END io_out[0]
-  PIN io_out[1]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 76.000 53.080 80.000 53.680 ;
-    END
-  END io_out[1]
-  PIN io_out[2]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 76.000 91.160 80.000 91.760 ;
-    END
-  END io_out[2]
-  PIN io_out[3]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 76.000 129.240 80.000 129.840 ;
-    END
-  END io_out[3]
-  PIN io_out[4]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 76.000 167.320 80.000 167.920 ;
-    END
-  END io_out[4]
-  PIN io_out[5]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 76.000 205.400 80.000 206.000 ;
-    END
-  END io_out[5]
   PIN vccd1
     DIRECTION INOUT ;
     USE POWER ;
@@ -192,31 +144,19 @@ MACRO analog_io_control
       LAYER met2 ;
         RECT 13.315 10.695 74.825 228.665 ;
       LAYER met3 ;
-        RECT 13.295 225.440 76.000 228.645 ;
-        RECT 13.295 224.040 75.600 225.440 ;
-        RECT 13.295 206.400 76.000 224.040 ;
-        RECT 13.295 205.000 75.600 206.400 ;
-        RECT 13.295 187.360 76.000 205.000 ;
-        RECT 13.295 185.960 75.600 187.360 ;
-        RECT 13.295 168.320 76.000 185.960 ;
-        RECT 13.295 166.920 75.600 168.320 ;
-        RECT 13.295 149.280 76.000 166.920 ;
-        RECT 13.295 147.880 75.600 149.280 ;
-        RECT 13.295 130.240 76.000 147.880 ;
-        RECT 13.295 128.840 75.600 130.240 ;
-        RECT 13.295 111.200 76.000 128.840 ;
-        RECT 13.295 109.800 75.600 111.200 ;
-        RECT 13.295 92.160 76.000 109.800 ;
-        RECT 13.295 90.760 75.600 92.160 ;
-        RECT 13.295 73.120 76.000 90.760 ;
-        RECT 13.295 71.720 75.600 73.120 ;
-        RECT 13.295 54.080 76.000 71.720 ;
-        RECT 13.295 52.680 75.600 54.080 ;
-        RECT 13.295 35.040 76.000 52.680 ;
-        RECT 13.295 33.640 75.600 35.040 ;
-        RECT 13.295 16.000 76.000 33.640 ;
-        RECT 13.295 14.600 75.600 16.000 ;
-        RECT 13.295 10.715 76.000 14.600 ;
+        RECT 13.295 218.640 76.050 228.645 ;
+        RECT 13.295 217.240 75.600 218.640 ;
+        RECT 13.295 179.200 76.050 217.240 ;
+        RECT 13.295 177.800 75.600 179.200 ;
+        RECT 13.295 139.760 76.050 177.800 ;
+        RECT 13.295 138.360 75.600 139.760 ;
+        RECT 13.295 100.320 76.050 138.360 ;
+        RECT 13.295 98.920 75.600 100.320 ;
+        RECT 13.295 60.880 76.050 98.920 ;
+        RECT 13.295 59.480 75.600 60.880 ;
+        RECT 13.295 21.440 76.050 59.480 ;
+        RECT 13.295 20.040 75.600 21.440 ;
+        RECT 13.295 10.715 76.050 20.040 ;
   END
 END analog_io_control
 END LIBRARY

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698599793
+timestamp 1698657151
 << nwell >>
 rect 1066 44869 14850 45435
 rect 1066 43781 14850 44347
@@ -50,44 +50,26 @@ rect 1104 2128 14971 45744
 << obsm2 >>
 rect 2663 2139 14965 45733
 << metal3 >>
-rect 15200 44888 16000 45008
-rect 15200 41080 16000 41200
-rect 15200 37272 16000 37392
-rect 15200 33464 16000 33584
-rect 15200 29656 16000 29776
-rect 15200 25848 16000 25968
-rect 15200 22040 16000 22160
-rect 15200 18232 16000 18352
-rect 15200 14424 16000 14544
-rect 15200 10616 16000 10736
-rect 15200 6808 16000 6928
-rect 15200 3000 16000 3120
+rect 15200 43528 16000 43648
+rect 15200 35640 16000 35760
+rect 15200 27752 16000 27872
+rect 15200 19864 16000 19984
+rect 15200 11976 16000 12096
+rect 15200 4088 16000 4208
 << obsm3 >>
-rect 2659 45088 15200 45729
-rect 2659 44808 15120 45088
-rect 2659 41280 15200 44808
-rect 2659 41000 15120 41280
-rect 2659 37472 15200 41000
-rect 2659 37192 15120 37472
-rect 2659 33664 15200 37192
-rect 2659 33384 15120 33664
-rect 2659 29856 15200 33384
-rect 2659 29576 15120 29856
-rect 2659 26048 15200 29576
-rect 2659 25768 15120 26048
-rect 2659 22240 15200 25768
-rect 2659 21960 15120 22240
-rect 2659 18432 15200 21960
-rect 2659 18152 15120 18432
-rect 2659 14624 15200 18152
-rect 2659 14344 15120 14624
-rect 2659 10816 15200 14344
-rect 2659 10536 15120 10816
-rect 2659 7008 15200 10536
-rect 2659 6728 15120 7008
-rect 2659 3200 15200 6728
-rect 2659 2920 15120 3200
-rect 2659 2143 15200 2920
+rect 2659 43728 15210 45729
+rect 2659 43448 15120 43728
+rect 2659 35840 15210 43448
+rect 2659 35560 15120 35840
+rect 2659 27952 15210 35560
+rect 2659 27672 15120 27952
+rect 2659 20064 15210 27672
+rect 2659 19784 15120 20064
+rect 2659 12176 15210 19784
+rect 2659 11896 15120 12176
+rect 2659 4288 15210 11896
+rect 2659 4008 15120 4288
+rect 2659 2143 15210 4008
 << metal4 >>
 rect 2657 2128 2977 45744
 rect 4370 2128 4690 45744
@@ -98,52 +80,40 @@ rect 11224 2128 11544 45744
 rect 12938 2128 13258 45744
 rect 14651 2128 14971 45744
 << labels >>
-rlabel metal3 s 15200 6808 16000 6928 6 io_oeb[0]
+rlabel metal3 s 15200 4088 16000 4208 6 io_oeb[0]
 port 1 nsew signal output
-rlabel metal3 s 15200 14424 16000 14544 6 io_oeb[1]
+rlabel metal3 s 15200 11976 16000 12096 6 io_oeb[1]
 port 2 nsew signal output
-rlabel metal3 s 15200 22040 16000 22160 6 io_oeb[2]
+rlabel metal3 s 15200 19864 16000 19984 6 io_oeb[2]
 port 3 nsew signal output
-rlabel metal3 s 15200 29656 16000 29776 6 io_oeb[3]
+rlabel metal3 s 15200 27752 16000 27872 6 io_oeb[3]
 port 4 nsew signal output
-rlabel metal3 s 15200 37272 16000 37392 6 io_oeb[4]
+rlabel metal3 s 15200 35640 16000 35760 6 io_oeb[4]
 port 5 nsew signal output
-rlabel metal3 s 15200 44888 16000 45008 6 io_oeb[5]
+rlabel metal3 s 15200 43528 16000 43648 6 io_oeb[5]
 port 6 nsew signal output
-rlabel metal3 s 15200 3000 16000 3120 6 io_out[0]
-port 7 nsew signal output
-rlabel metal3 s 15200 10616 16000 10736 6 io_out[1]
-port 8 nsew signal output
-rlabel metal3 s 15200 18232 16000 18352 6 io_out[2]
-port 9 nsew signal output
-rlabel metal3 s 15200 25848 16000 25968 6 io_out[3]
-port 10 nsew signal output
-rlabel metal3 s 15200 33464 16000 33584 6 io_out[4]
-port 11 nsew signal output
-rlabel metal3 s 15200 41080 16000 41200 6 io_out[5]
-port 12 nsew signal output
 rlabel metal4 s 2657 2128 2977 45744 6 vccd1
-port 13 nsew power bidirectional
+port 7 nsew power bidirectional
 rlabel metal4 s 6084 2128 6404 45744 6 vccd1
-port 13 nsew power bidirectional
+port 7 nsew power bidirectional
 rlabel metal4 s 9511 2128 9831 45744 6 vccd1
-port 13 nsew power bidirectional
+port 7 nsew power bidirectional
 rlabel metal4 s 12938 2128 13258 45744 6 vccd1
-port 13 nsew power bidirectional
+port 7 nsew power bidirectional
 rlabel metal4 s 4370 2128 4690 45744 6 vssd1
-port 14 nsew ground bidirectional
+port 8 nsew ground bidirectional
 rlabel metal4 s 7797 2128 8117 45744 6 vssd1
-port 14 nsew ground bidirectional
+port 8 nsew ground bidirectional
 rlabel metal4 s 11224 2128 11544 45744 6 vssd1
-port 14 nsew ground bidirectional
+port 8 nsew ground bidirectional
 rlabel metal4 s 14651 2128 14971 45744 6 vssd1
-port 14 nsew ground bidirectional
+port 8 nsew ground bidirectional
 << properties >>
 string FIXED_BBOX 0 0 16000 48000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 487224
-string GDS_FILE /home/zwierzak/projects/caravel_user_project/openlane/analog_io_control/runs/23_10_29_18_09/results/signoff/analog_io_control.magic.gds
+string GDS_END 481330
+string GDS_FILE /home/zwierzak/projects/caravel_user_project/openlane/analog_io_control/runs/23_10_30_10_06/results/signoff/analog_io_control.magic.gds
 string GDS_START 23768
 << end >>
 

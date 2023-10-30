@@ -1,24 +1,16 @@
 module analog_io_control (vccd1,
     vssd1,
-    io_oeb,
-    io_out);
+    io_oeb);
  input vccd1;
  input vssd1;
  output [5:0] io_oeb;
- output [5:0] io_out;
 
- wire net4;
- wire net5;
- wire net6;
- wire net7;
- wire net8;
- wire net9;
- wire net10;
- wire net11;
- wire net12;
  wire net1;
  wire net2;
  wire net3;
+ wire net4;
+ wire net5;
+ wire net6;
 
  sky130_fd_sc_hd__decap_3 FILLER_0_0_109 (.VGND(vssd1),
     .VNB(vssd1),
@@ -500,7 +492,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_16_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_16_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_16_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -628,11 +624,7 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_4 FILLER_0_18_141 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1));
- sky130_fd_sc_hd__fill_1 FILLER_0_18_145 (.VGND(vssd1),
+ sky130_fd_sc_hd__fill_2 FILLER_0_18_141 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -1024,7 +1016,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_6 FILLER_0_23_137 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_8 FILLER_0_23_137 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_23_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -1480,7 +1476,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_2_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_2_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_2_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -1544,7 +1544,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_30_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_30_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_30_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -1740,11 +1744,7 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_8 FILLER_0_33_137 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1));
- sky130_fd_sc_hd__fill_1 FILLER_0_33_145 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_6 FILLER_0_33_137 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -2004,7 +2004,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_6 FILLER_0_37_137 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_8 FILLER_0_37_137 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_37_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -2524,7 +2528,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_44_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_44_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_44_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -2720,11 +2728,7 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_8 FILLER_0_47_137 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1));
- sky130_fd_sc_hd__fill_1 FILLER_0_47_145 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_6 FILLER_0_47_137 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -2916,11 +2920,7 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_4 FILLER_0_4_141 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1));
- sky130_fd_sc_hd__fill_1 FILLER_0_4_145 (.VGND(vssd1),
+ sky130_fd_sc_hd__fill_2 FILLER_0_4_141 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -3052,7 +3052,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_6 FILLER_0_51_137 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_8 FILLER_0_51_137 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_51_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -3508,7 +3512,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_58_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_58_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_58_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -3832,11 +3840,7 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_4 FILLER_0_62_141 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1));
- sky130_fd_sc_hd__fill_1 FILLER_0_62_145 (.VGND(vssd1),
+ sky130_fd_sc_hd__fill_2 FILLER_0_62_141 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -4032,7 +4036,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_6 FILLER_0_65_137 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_8 FILLER_0_65_137 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_65_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -4556,7 +4564,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_72_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_72_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_72_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -4816,11 +4828,7 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_4 FILLER_0_76_141 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1));
- sky130_fd_sc_hd__fill_1 FILLER_0_76_145 (.VGND(vssd1),
+ sky130_fd_sc_hd__fill_2 FILLER_0_76_141 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -5016,7 +5024,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__fill_2 FILLER_0_79_141 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_4 FILLER_0_79_141 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_79_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -5212,7 +5224,11 @@ module analog_io_control (vccd1,
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
- sky130_fd_sc_hd__decap_6 FILLER_0_9_137 (.VGND(vssd1),
+ sky130_fd_sc_hd__decap_8 FILLER_0_9_137 (.VGND(vssd1),
+    .VNB(vssd1),
+    .VPB(vccd1),
+    .VPWR(vccd1));
+ sky130_fd_sc_hd__fill_1 FILLER_0_9_145 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
     .VPWR(vccd1));
@@ -6311,21 +6327,6 @@ module analog_io_control (vccd1,
     .VPB(vccd1),
     .VPWR(vccd1),
     .HI(net1));
- sky130_fd_sc_hd__conb_1 analog_io_control_10 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .HI(net10));
- sky130_fd_sc_hd__conb_1 analog_io_control_11 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .HI(net11));
- sky130_fd_sc_hd__conb_1 analog_io_control_12 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .HI(net12));
  sky130_fd_sc_hd__conb_1 analog_io_control_2 (.VGND(vssd1),
     .VNB(vssd1),
     .VPB(vccd1),
@@ -6351,31 +6352,10 @@ module analog_io_control (vccd1,
     .VPB(vccd1),
     .VPWR(vccd1),
     .HI(net6));
- sky130_fd_sc_hd__conb_1 analog_io_control_7 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .HI(net7));
- sky130_fd_sc_hd__conb_1 analog_io_control_8 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .HI(net8));
- sky130_fd_sc_hd__conb_1 analog_io_control_9 (.VGND(vssd1),
-    .VNB(vssd1),
-    .VPB(vccd1),
-    .VPWR(vccd1),
-    .HI(net9));
- assign io_oeb[0] = net4;
- assign io_oeb[1] = net5;
- assign io_oeb[2] = net6;
- assign io_oeb[3] = net7;
- assign io_oeb[4] = net8;
- assign io_oeb[5] = net9;
- assign io_out[0] = net10;
- assign io_out[1] = net11;
- assign io_out[2] = net12;
- assign io_out[3] = net1;
- assign io_out[4] = net2;
- assign io_out[5] = net3;
+ assign io_oeb[0] = net1;
+ assign io_oeb[1] = net2;
+ assign io_oeb[2] = net3;
+ assign io_oeb[3] = net4;
+ assign io_oeb[4] = net5;
+ assign io_oeb[5] = net6;
 endmodule

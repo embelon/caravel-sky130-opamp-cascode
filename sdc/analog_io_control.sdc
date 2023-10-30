@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Sun Oct 29 17:15:12 2023
+# Mon Oct 30 09:11:14 2023
 ###############################################################################
 current_design analog_io_control
 ###############################################################################
@@ -19,12 +19,6 @@ set_load -pin_load 0.1900 [get_ports {io_oeb[3]}]
 set_load -pin_load 0.1900 [get_ports {io_oeb[2]}]
 set_load -pin_load 0.1900 [get_ports {io_oeb[1]}]
 set_load -pin_load 0.1900 [get_ports {io_oeb[0]}]
-set_load -pin_load 0.1900 [get_ports {io_out[5]}]
-set_load -pin_load 0.1900 [get_ports {io_out[4]}]
-set_load -pin_load 0.1900 [get_ports {io_out[3]}]
-set_load -pin_load 0.1900 [get_ports {io_out[2]}]
-set_load -pin_load 0.1900 [get_ports {io_out[1]}]
-set_load -pin_load 0.1900 [get_ports {io_out[0]}]
 set_timing_derate -early 0.9500
 set_timing_derate -late 1.0500
 ###############################################################################
