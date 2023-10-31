@@ -1,0 +1,3 @@
+[submodule "verilog/rtl/raybox-zero"]
+	path = verilog/rtl/raybox-zero
+	url = https://github.com/algofoogle/raybox-zero

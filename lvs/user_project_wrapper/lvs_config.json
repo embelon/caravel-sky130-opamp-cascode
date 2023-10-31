@@ -22,11 +22,13 @@
 	],
 	"LVS_SPICE_FILES": [
 		"$UPRJ_ROOT/spi/lvs/opamp_cascode.spice",
-		"$UPRJ_ROOT/spi/lvs/analog_io_control.spice"
+		"$UPRJ_ROOT/spi/lvs/analog_io_control.spice",
+		"$UPRJ_ROOT/spi/lvs/top_ew_algofoogle.spice"
 	],
 	"LVS_VERILOG_FILES": [
 		"$UPRJ_ROOT/verilog/gl/user_proj_example.v",
 		"$UPRJ_ROOT/verilog/gl/analog_io_control.v",
+		"$UPRJ_ROOT/verilog/gl/top_ew_algofoogle.v",
 		"$UPRJ_ROOT/verilog/gl/$TOP_SOURCE.v"
 	],
 	"LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
