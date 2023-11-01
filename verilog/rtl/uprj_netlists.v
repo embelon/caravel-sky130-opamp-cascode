@@ -25,7 +25,7 @@
     `include "gl/analog_io_control.v"
 `else
     `include "user_project_wrapper.v"
-    `include "raybox-zero/src/rtl/top_ew_algofoogle.v"
+    `include "top_ew_algofoogle.v"
     `include "analog_io_control.v"
     `include "opamp_cascode.v"
 `endif
