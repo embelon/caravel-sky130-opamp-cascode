@@ -7,7 +7,7 @@
     "ROUTING_CORES": 2,
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_NET": "mprj.clk",
+    "CLOCK_NET": "top_ew_algofoogle.i_clk",
     "FP_PDN_MACRO_HOOKS": [
         "top_ew_algofoogle vccd1 vssd1 vccd1 vssd1,",
         "aio_ctrl vccd1 vssd1 vccd1 vssd1,",
