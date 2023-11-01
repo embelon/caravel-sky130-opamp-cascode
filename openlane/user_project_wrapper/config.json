@@ -7,9 +7,10 @@
     "ROUTING_CORES": 2,
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_NET": "mprj.clk",
+    "CLOCK_NET": "top_mixed.clk",
     "FP_PDN_MACRO_HOOKS": [
         "top_ew_algofoogle vccd1 vssd1 vccd1 vssd1,",
+        "top_mixed vccd1 vssd1 vccd1 vssd1,",
         "aio_ctrl vccd1 vssd1 vccd1 vssd1,",
         "opamp vccd1 vssd1 VCC VSS"
     ],
@@ -17,16 +18,19 @@
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/gl/top_ew_algofoogle.v",
+        "dir::../../verilog/rtl/TOP_mixed.v",        
         "dir::../../verilog/gl/analog_io_control.v",
         "dir::../../verilog/rtl/opamp_cascode.v"
     ],
     "EXTRA_LEFS": [
         "dir::../../lef/top_ew_algofoogle.lef",
+        "dir::../../lef/TOP_mixed.lef",
         "dir::../../lef/analog_io_control.lef",
         "dir::../../lef/opamp_cascode.lef"
     ],
     "EXTRA_GDS_FILES": [
         "dir::../../gds/top_ew_algofoogle.gds",
+        "dir::../../gds/TOP_mixed.gds",
         "dir::../../gds/analog_io_control.gds",
         "dir::../../gds/opamp_cascode.gds"
     ],

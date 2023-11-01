@@ -1,0 +1,27 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "analog_io_control")
+ (DATE "Mon Oct 30 09:12:20 2023")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.4.0")
+ (DIVIDER .)
+ (VOLTAGE 1.800::1.800)
+ (PROCESS "1.000::1.000")
+ (TEMPERATURE 25.000::25.000)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "analog_io_control")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT analog_io_control_1.HI io_oeb[0] (0.000:0.000:0.000))
+    (INTERCONNECT analog_io_control_2.HI io_oeb[1] (0.000:0.000:0.000))
+    (INTERCONNECT analog_io_control_3.HI io_oeb[2] (0.000:0.000:0.000))
+    (INTERCONNECT analog_io_control_4.HI io_oeb[3] (0.000:0.000:0.000))
+    (INTERCONNECT analog_io_control_5.HI io_oeb[4] (0.000:0.000:0.000))
+    (INTERCONNECT analog_io_control_6.HI io_oeb[5] (0.000:0.000:0.000))
+   )
+  )
+ )
+)

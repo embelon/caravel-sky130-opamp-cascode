@@ -82,23 +82,70 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
+
+TOP_mixed top_mixed (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),      // User area 1 1.8V power
+    .vssd1(vssd1),      // User area 1 digital ground
+`endif
+
+    .io_out__27         (io_out[27]),
+    .io_out__28         (io_out[28]),
+    .io_out__29         (io_out[29]),
+    .analog_io__1       (analog_io[1]),
+    .analog_io__2       (analog_io[2]),
+    .analog_io__3       (analog_io[3]),
+    .io_in__31          (io_in[31]),
+    .io_in__32          (io_in[32]),
+    .io_in__34          (io_in[34]),
+    .io_in__35          (io_in[35]),
+    .io_oeb__10         (io_oeb[10]),
+    .io_oeb__27         (io_oeb[27]),
+    .io_oeb__28         (io_oeb[28]),
+    .io_oeb__29         (io_oeb[29]),
+    .io_oeb__30         (io_oeb[30]),
+    .io_oeb__31         (io_oeb[31]),
+    .io_oeb__32         (io_oeb[32]),
+    .io_oeb__33         (io_oeb[33]),
+    .io_oeb__34         (io_oeb[34]),
+    .io_oeb__35         (io_oeb[35]),
+    .io_oeb__8          (io_oeb[8]),
+    .io_oeb__9          (io_oeb[9]),
+    .io_out__30         (io_out[30]),
+    .io_out__33         (io_out[33]),
+    .wb_clk_i           (wb_clk_i),
+    .wb_rst_i           (wb_rst_i),
+    .wbs_ack_o          (wbs_ack_o),
+    .wbs_cyc_i          (wbs_cyc_i),
+    .wbs_stb_i          (wbs_stb_i),
+    .wbs_we_i           (wbs_we_i),
+    .la_data_in         (la_data_in[1:0]),
+    .user_irq           (user_irq[2:0]),
+    .wbs_adr_i          (wbs_adr_i[31:0]),
+    .wbs_dat_i          (wbs_dat_i[31:0]),
+    .wbs_dat_o          (wbs_dat_o[31:0]),
+    .wbs_sel_i          (wbs_sel_i[3:0])
+);
+
+//// BEGIN: INSTANTIATION OF PAWEL'S DESIGN (opamp_cascode & analog_io_control) ---------------------
+
 opamp_cascode opamp (
 `ifdef USE_POWER_PINS
-	.VCC(vccd1),	// User area 1 1.8V power
-	.VSS(vssd1),	// User area 1 digital ground
+	.VCC(vccd1),	        // User area 1 1.8V power
+	.VSS(vssd1),	        // User area 1 digital ground
 `endif
 
     // Analog signals
     // Inputs
-    .IN_M(analog_io[9]),
-    .IN_P(analog_io[8]),
+    .IN_M                   (analog_io[9]),
+    .IN_P                   (analog_io[8]),
     // Output
-    .OUT(analog_io[10]),
+    .OUT                    (analog_io[10]),
     // Bias current
-    .IB(analog_io[7]),
+    .IB                     (analog_io[7]),
     // Bias voltages
-    .VB_A(analog_io[5]),
-    .VB_B(analog_io[6])
+    .VB_A                   (analog_io[5]),
+    .VB_B                   (analog_io[6])
 );
 
 // This is simple digital block that is driving high
@@ -107,11 +154,13 @@ opamp_cascode opamp (
 // Please, notice offset - analog_io[10:5] = digital_io[17:12]
 analog_io_control aio_ctrl (
 `ifdef USE_POWER_PINS
-	.vccd1(vccd1),	// User area 1 1.8V power
-	.vssd1(vssd1),	// User area 1 digital ground
+	.vccd1(vccd1),	        // User area 1 1.8V power
+	.vssd1(vssd1),	        // User area 1 digital ground
 `endif
-    .io_oeb(io_oeb[17:12])
+    .io_oeb                 (io_oeb[17:12])
 );
+
+//// END: INSTANTIATION OF PAWEL'S DESIGN (opamp_cascode & analog_io_control) ---------------------
 
 //// BEGIN: INSTANTIATION OF ANTON'S DESIGN (top_ew_algofoogle) (SNIPPET2_ShareIns) ---------------------
 
@@ -146,8 +195,8 @@ wire        anton_o_reset;              // For now this is just used during coco
 
 top_ew_algofoogle top_ew_algofoogle (
 `ifdef USE_POWER_PINS
-    .vccd1(vccd1),        // User area 1 1.8V power
-    .vssd1(vssd1),        // User area 1 digital ground
+    .vccd1(vccd1),          // User area 1 1.8V power
+    .vssd1(vssd1),          // User area 1 digital ground
 `endif
 
     .i_clk                  (user_clock2),
