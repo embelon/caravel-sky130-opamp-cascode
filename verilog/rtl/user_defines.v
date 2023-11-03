@@ -52,9 +52,9 @@
 // up in a state that can be used immediately without depending on
 // the management SoC to run a startup program to configure the GPIOs.
 
-`define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_USER_STD_OUTPUT         // SoC: ser_rx (In)
-`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_USER_STD_OUTPUT         // SoC: ser_tx (Out)
-`define USER_CONFIG_GPIO_7_INIT  `GPIO_MODE_USER_STD_OUTPUT         // SoC: irq (In)
+`define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_MGMT_STD_INPUT_NOPULL   // SoC: ser_rx (In)
+`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_MGMT_STD_OUTPUT         // SoC: ser_tx (Out)
+`define USER_CONFIG_GPIO_7_INIT  `GPIO_MODE_MGMT_STD_INPUT_NOPULL   // SoC: irq (In)
 
 `define USER_CONFIG_GPIO_8_INIT  `GPIO_MODE_USER_STD_ANALOG         // Ellen: cascref (analog[1])
 `define USER_CONFIG_GPIO_9_INIT  `GPIO_MODE_USER_STD_ANALOG         // Ellen: adc_in0 (analog[2])
@@ -88,7 +88,7 @@
 `define USER_CONFIG_GPIO_34_INIT `GPIO_MODE_USER_STD_INPUT_NOPULL   // Ellen: glitch_in_nCLR_pin1 (Anton share: i_tex_in[3])
 `define USER_CONFIG_GPIO_35_INIT `GPIO_MODE_USER_STD_INPUT_NOPULL   // Ellen: glitch_in_pin1      (Anton share: i_spare_1)
 
-`define USER_CONFIG_GPIO_36_INIT `GPIO_MODE_USER_STD_OUTPUT         // SoC: flash_io[2] (I/O)
-`define USER_CONFIG_GPIO_37_INIT `GPIO_MODE_USER_STD_OUTPUT         // SoC: flash_io[3] (I/O)
+`define USER_CONFIG_GPIO_36_INIT `GPIO_MODE_MGMT_STD_INPUT_NOPULL   // SoC: flash_io[2] (I/O)
+`define USER_CONFIG_GPIO_37_INIT `GPIO_MODE_MGMT_STD_INPUT_NOPULL   // SoC: flash_io[3] (I/O)
 
 `endif // __USER_DEFINES_H
